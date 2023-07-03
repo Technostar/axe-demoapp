@@ -18,10 +18,10 @@ jobs:
        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       
     - name: Build the new release :latest
-      run: docker build -t technostar2008/axe-demoapp:1.0 .
+      run: docker build -t technostar2008/axe-demoapp:2.0 .
 
     - name: Push to docker hub :latest
       uses: actions-hub/docker@master
       with:
-       args: push technostar2008/axe-demoapp:1.0
+       args: push technostar2008/axe-demoapp:2.0
  
